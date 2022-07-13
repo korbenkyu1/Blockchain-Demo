@@ -2,6 +2,8 @@ const form = document.querySelector('form');
 const formData = form.querySelector("input#data");
 formData.addEventListener('input', function(){
     exampleData.innerText = formData.value;
+    exampleHash.innerText = blockHash = MD5(`${examplePrev.value}`+`${formNonce.value}`+`${formData.value}`);
+    checkHash();
 });
 const formNonce = form.querySelector('input#nonce');
 formNonce.addEventListener('input', function(){
