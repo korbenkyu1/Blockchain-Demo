@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain & Mining Demo</title>
+    <link rel="stylesheet" href="style.css"/> 
+</head>
+<body>
+    <div id="UI">
+        <form>
+            <h1>Blockchain & Mining Demo</h1>
+            <input
+            id="data"
+            type="text"
+            maxlength="16"
+            placeholder="Data" />
+
+            <input 
+            id="nonce"
+            type="number"
+            min="0"
+            placeholder="Nonce" />
+            <input 
+            id="fire"
+            value="🔥"
+            type="button"
+            />
+            <input 
+            id="water"
+            value="🌊"
+            type="button"
+            />
+            
+            <input 
+            id="difficulty"
+            value="2"
+            min="1"
+            type="number"
+            placeholder="Difficulty"
+            />
+            <input 
+            id="mine"
+            value="Mine Block"
+            type="button"
+            disabled="true"
+            />
+        </form> 
+        <div id="example">
+            <h1>Block Example</h1>
+            <h3 style="background-color:white; height:70%;border:4px solid black;border-radius:30px">
+                <br>
+                <span class="key">Previous Hash:</span><br>
+                <span id="prev" class="value">None</span>
+                <br><br>
+                <span class="key">Data:</span><br>
+                <span id="data" class="value">None</span>
+                <br><br>
+                <span class="key">Hash:</span><br>
+                <span id="hash" class="value">None</span>
+            </h3>
+        </div>
+    </div>
+    <div id="explain">
+        <div id="process">
+            <img src="blockchanin&proof-of-work.png" alt="" style="width: 95%; height:90%;margin-top: 7px;">
+            <h6 style="margin-top: 0px;">이미지 출처: <a href="https://www.youtube.com/watch?v=ElGBP90XZWE">개발자가 설명해주는 비트코인 채굴 방법 (ft 시뮬레이터)</a></h6>
+        </div>
+    <div id="Blocks"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
